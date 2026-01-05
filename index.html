@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Antonio Patania</title>
+  <meta name="description" content="Opere di Antonio Patania." />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="index.html">Antonio Patania</a>
+    <nav class="nav">
+      <a href="opere.html">Opere</a>
+      <a href="bio.html">Bio</a>
+      <a href="contatti.html">Contatti</a>
+      <a class="lang" href="en/index.html">EN</a>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <p class="lead">
+      <em>Un’indagine interiore attraversa i quadri di Antonio Patania: emerge nei volti, si raccoglie nello sguardo, si difende dietro corazze di forza e di paura.</em>
+    </p>
+
+    <div class="statement small">
+      La mia pratica pittorica nasce da un dialogo tra materia e interiorità. Dipingo figure umane, soprattutto volti femminili, come luoghi di identificazione emotiva. Strati di colore, cere, terre, ossidi e talvolta foglia oro filtrano l’immagine, velando la realtà e trasformandola in esperienza interiore. Ogni volto è uno specchio: non posso dipingerlo se non mi attraversa.
+    </div>
+
+    <a class="hero-card" href="opere.html" aria-label="Vai alle opere">
+      <img src="assets/images/hero.jpg" alt="Opera di Antonio Patania">
+      <div class="hero-caption">
+        <div class="hero-title">Opere</div>
+        <div class="hero-sub">2021 · 2020 · Selezione</div>
+      </div>
+    </a>
+  </main>
+
+  <footer class="foot">© <span id="year"></span> Antonio Patania</footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
