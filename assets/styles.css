@@ -496,3 +496,18 @@ main.wrap{
 main.wrap .quote{
   color: var(--ink-soft);
 }
+/* HOME — meno vuoto, stessa atmosfera */
+main.hero{
+  padding-top: clamp(18px, 3vw, 34px);
+  padding-bottom: clamp(18px, 4vw, 44px);
+}
+
+/* avvicina citazione + immagine */
+main.hero .lead{
+  margin-bottom: clamp(14px, 2.2vw, 22px);
+}
+
+/* avvicina l’immagine al centro e limita larghezza su schermi enormi */
+main.hero .hero-card{
+  max-width: min(640px, 92vw);
+}
