@@ -628,3 +628,11 @@ main.hero{
   padding-top: 28px !important;
   padding-bottom: 42px !important;
 }
+/* HOME — avvicina citazione al quadro */
+main.hero p.lead{
+  margin-bottom: 6px !important;
+}
+
+main.hero{
+  row-gap: clamp(12px, 2vw, 20px) !important;
+}
