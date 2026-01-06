@@ -636,3 +636,15 @@ main.hero p.lead{
 main.hero{
   row-gap: clamp(12px, 2vw, 20px) !important;
 }
+/* HOME — foto artista (discreta, museale) */
+.artist{
+  margin: 10px 0 18px;
+}
+
+.artist img{
+  width: 88px;
+  height: auto;
+  border-radius: 50%;
+  opacity: .85;
+  filter: grayscale(100%);
+}
