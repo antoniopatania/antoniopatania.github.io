@@ -28,7 +28,7 @@ window.Site = (() => {
     const subtitle = `${w.year}${w.medium ? " · " + w.medium : ""}`;
     return `
       <a class="card" href="${basePath}opera.html?id=${encodeURIComponent(w.id)}">
-        <img src="${basePath}${w.image}" alt="${escapeHtml(w.title)}" loading="lazy">
+        <img src="/${String(w.image).replace(/^\/+/, "")}" alt="${escapeHtml(w.title)}" loading="lazy">
         <div class="cap">
           <div class="t">${escapeHtml(w.title)}</div>
           <div class="s">${escapeHtml(subtitle)}</div>
