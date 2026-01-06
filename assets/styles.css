@@ -295,7 +295,7 @@ main.hero .hero-card img{
     }
   }
 }
-body { outline: 8px solid red !important; }
+
 /* HOME — rimuove cornice visiva dalla hero */
 main.hero .hero-card{
   border: none !important;
