@@ -430,3 +430,69 @@ main.hero .hero-card img{
   transform: scale(1.15);
   transform-origin: center;
 }
+/* =========================================================
+   TYPO — micro raffinamento (museale)
+   ========================================================= */
+
+:root{
+  --ink: rgba(245,242,235,.92);
+  --ink-soft: rgba(245,242,235,.78);
+  --ink-faint: rgba(245,242,235,.62);
+}
+
+/* Base tipografica */
+html{
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+}
+body{
+  color: var(--ink);
+  font-family: ui-serif, "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  letter-spacing: 0.01em;
+}
+
+/* Brand (nome artista) */
+header.top .brand{
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: clamp(26px, 3.4vw, 40px);
+  color: rgba(245,242,235,.95);
+}
+
+/* Menu (più discreto, più “galleria”) */
+header.top .nav a{
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+header.top .nav a:hover,
+header.top .nav a.active{
+  color: var(--ink);
+}
+
+/* Citazione home */
+main.hero .lead em{
+  font-size: clamp(16px, 1.5vw, 20px);
+  line-height: 1.8;
+  color: var(--ink-soft);
+}
+
+/* Box testo in alto a destra */
+main.hero .statement{
+  font-size: 13px;
+  line-height: 1.7;
+  color: rgba(245,242,235,.78);
+}
+
+/* Bio (sezione wrap) - leggibilità */
+main.wrap{
+  font-size: clamp(15px, 1.25vw, 17px);
+  line-height: 1.8;
+}
+main.wrap .quote{
+  color: var(--ink-soft);
+}
