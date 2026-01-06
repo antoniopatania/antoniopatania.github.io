@@ -511,4 +511,47 @@ main.hero .lead{
 main.hero .hero-card{
   max-width: min(640px, 92vw);
 }
+/* =========================================================
+   TYPO — micro raffinamento definitivo (SALA GRANDE)
+   ========================================================= */
 
+/* base: un filo più “editoriale”, meno default */
+body{
+  letter-spacing: 0.012em;
+}
+
+/* Nome artista: più autorevole, ma sempre sobrio */
+a.brand{
+  font-weight: 300 !important;
+  letter-spacing: 0.20em !important;
+  font-size: clamp(28px, 3.6vw, 42px) !important;
+}
+
+/* Menu: più rarefatto, quasi etichetta */
+nav a{
+  font-size: 12px !important;
+  letter-spacing: 0.20em !important;
+  color: rgba(245,242,235,.60) !important;
+}
+nav a:hover,
+nav a.active{
+  color: rgba(245,242,235,.92) !important;
+}
+
+/* Home: citazione più presente (senza gridare) */
+main.hero .lead em{
+  font-size: clamp(18px, 1.8vw, 22px) !important;
+  line-height: 1.75 !important;
+  color: rgba(245,242,235,.78) !important;
+}
+
+/* Bio: respiro e leggibilità */
+main.wrap{
+  line-height: 1.85 !important;
+}
+main.wrap p{
+  color: rgba(245,242,235,.88) !important;
+}
+main.wrap .quote{
+  color: rgba(245,242,235,.78) !important;
+}
