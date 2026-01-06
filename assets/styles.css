@@ -637,28 +637,16 @@ main.hero{
   row-gap: clamp(12px, 2vw, 20px) !important;
 }
 
-/* =========================================
-   HOME — foto artista (editoriale, non santino)
-   ========================================= */
-
-main.hero .artist{
-  margin: 22px 0 18px;
-  max-width: 420px;
+/* BIO — foto artista */
+main.wrap .bio-photo{
+  margin: 18px 0 26px;
 }
-
-main.hero .artist img{
-  display: block;
-  width: 100%;
+main.wrap .bio-photo img{
+  width: min(260px, 70vw);
   height: auto;
-  border-radius: 6px;        /* leggermente morbido, NON ovale */
-  object-fit: cover;
-  filter: grayscale(12%) contrast(1.05);
-}
-
-/* Mobile: più respiro */
-@media (max-width: 900px){
-  main.hero .artist{
-    max-width: 100%;
-    margin: 18px 0 16px;
-  }
+  display: block;
+  border-radius: 14px;
+  border: 1px solid rgba(245,242,235,.14);
+  box-shadow: 0 22px 70px rgba(0,0,0,.45);
+  opacity: .95;
 }
