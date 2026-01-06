@@ -420,3 +420,13 @@ main.wrap *{
   filter: none !important;
   mix-blend-mode: normal !important;
 }
+/* HOME — elimina il passepartout bianco della hero (crop leggero) */
+main.hero .hero-card{
+  overflow: hidden !important;
+  border-radius: 0 !important;
+}
+
+main.hero .hero-card img{
+  transform: scale(1.06);
+  transform-origin: center;
+}
