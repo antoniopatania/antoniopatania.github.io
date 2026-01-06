@@ -312,3 +312,48 @@ header.top .brand{
   font-size: clamp(26px, 3.4vw, 38px) !important;
   letter-spacing: 0.14em !important;
 }
+/* =========================================================
+   FIX LETTURA — Bio / pagine testuali su tema dark
+   ========================================================= */
+
+/* Assicura testo visibile ovunque */
+body{
+  color: rgba(245,242,235,.92) !important;
+}
+
+/* Testo e titoli sempre leggibili */
+main, section, article, header, footer, p, div, span, li,
+h1, h2, h3, h4, h5, h6{
+  color: rgba(245,242,235,.92);
+}
+
+/* Link leggibili */
+a{
+  color: rgba(245,242,235,.86);
+}
+a:hover{
+  color: rgba(245,242,235,.98);
+}
+
+/* Impaginazione “museo” per testi lunghi (bio) */
+main{
+  width: min(900px, 100%);
+  margin: 0 auto;
+  padding: clamp(18px, 4vw, 48px);
+  line-height: 1.75;
+  font-size: clamp(15px, 1.25vw, 17px);
+}
+
+/* Se in bio hai box/riquadri che diventano neri, li rendiamo leggibili */
+.statement, .box, .card, .panel{
+  background: rgba(255,255,255,.04) !important;
+  border: 1px solid rgba(245,242,235,.14) !important;
+  border-radius: 14px;
+}
+
+/* Mobile: un po’ più respiro */
+@media (max-width: 900px){
+  main{
+    padding: clamp(16px, 5vw, 28px);
+  }
+}
