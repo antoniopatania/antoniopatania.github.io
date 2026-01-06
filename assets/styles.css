@@ -296,3 +296,19 @@ main.hero .hero-card img{
   }
 }
 body { outline: 8px solid red !important; }
+/* HOME — rimuove cornice visiva dalla hero */
+main.hero .hero-card{
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+main.hero .hero-card img{
+  border-radius: 0 !important;
+}
+/* HOME — nome artista più presente */
+header.top .brand{
+  font-size: clamp(26px, 3.4vw, 38px) !important;
+  letter-spacing: 0.14em !important;
+}
