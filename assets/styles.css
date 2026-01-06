@@ -427,6 +427,6 @@ main.hero .hero-card{
 }
 
 main.hero .hero-card img{
-  transform: scale(1.10);
+  transform: scale(1.15);
   transform-origin: center;
 }
