@@ -412,3 +412,11 @@ main.wrap a{
 main.wrap a:hover{
   color: rgba(245,242,235,1);
 }
+/* BIO — testo non “trasparente” */
+main.wrap,
+main.wrap *{
+  opacity: 1 !important;
+  color: rgba(245,242,235,.92) !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+}
