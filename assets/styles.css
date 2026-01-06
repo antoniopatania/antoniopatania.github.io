@@ -588,4 +588,43 @@ main.hero{
   padding-top: 28px !important;
   padding-bottom: 42px !important;
 }
-body{ background: hotpink !important; }
+/* =========================================================
+   HOME — override mirato (selettori esatti per il tuo HTML)
+   ========================================================= */
+
+header.top a.brand{
+  font-size: clamp(32px, 4vw, 46px) !important;
+  letter-spacing: 0.22em !important;
+  font-weight: 300 !important;
+}
+
+header.top nav.nav a{
+  font-size: 12px !important;
+  letter-spacing: 0.20em !important;
+  text-transform: uppercase !important;
+  color: rgba(245,242,235,.60) !important;
+}
+header.top nav.nav a:hover,
+header.top nav.nav a.active{
+  color: rgba(245,242,235,.92) !important;
+}
+
+main.hero p.lead{
+  margin-bottom: 18px !important;
+}
+
+main.hero p.lead em{
+  font-size: clamp(19px, 2vw, 23px) !important;
+  line-height: 1.7 !important;
+  color: rgba(245,242,235,.82) !important;
+}
+
+main.hero .statement{
+  font-size: 14px !important;
+  line-height: 1.75 !important;
+}
+
+main.hero{
+  padding-top: 28px !important;
+  padding-bottom: 42px !important;
+}
