@@ -132,3 +132,166 @@ body{ font-family: ui-serif, Georgia, "Times New Roman", Times, serif; }
   font-size:12px;
   border-top:1px solid var(--line);
 }
+/* =========================================================
+   HOME PAGE — SOLUZIONE B
+   Museo / silenzio / proporzione / mobile-first
+   ========================================================= */
+
+/* Palette e tipografia */
+:root{
+  --bg: #0b0c0e;
+  --bg2: #0f1115;
+  --text: rgba(245,242,235,.92);
+  --muted: rgba(245,242,235,.70);
+  --hairline: rgba(245,242,235,.14);
+  --shadow: 0 30px 90px rgba(0,0,0,.55);
+  --radius: 18px;
+}
+
+/* Fondo generale */
+body{
+  background:
+    radial-gradient(1200px 800px at 50% 18%, rgba(255,255,255,.05), transparent 60%),
+    linear-gradient(180deg, var(--bg), var(--bg2));
+  color: var(--text);
+  font-family:
+    ui-serif,
+    "Iowan Old Style",
+    "Palatino Linotype",
+    Palatino,
+    Georgia,
+    serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ================= HEADER ================= */
+
+/* Header sobrio, nome artista protagonista */
+header.top{
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(11,12,14,.75);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--hairline);
+}
+
+/* Nome artista: grande, sobrio, autorevole */
+header.top .brand{
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  font-size: clamp(22px, 3vw, 32px);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text);
+  text-decoration: none;
+}
+
+/* Navigazione discreta */
+header.top .nav a{
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+header.top .nav a:hover{
+  color: var(--text);
+  border-bottom-color: var(--hairline);
+}
+
+/* ================= HERO ================= */
+
+main.hero{
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding: clamp(22px, 4vw, 56px);
+  min-height: calc(100svh - 80px);
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: clamp(20px, 4vw, 56px);
+  align-items: center;
+}
+
+/* Testo introduttivo */
+main.hero .lead{
+  margin: 0 0 14px 0;
+  font-size: clamp(18px, 2vw, 24px);
+  line-height: 1.6;
+  color: var(--muted);
+  max-width: 60ch;
+}
+
+/* Statement */
+main.hero .statement.small{
+  margin: 0;
+  font-size: clamp(14px, 1.4vw, 16px);
+  line-height: 1.75;
+  color: rgba(245,242,235,.62);
+  max-width: 68ch;
+}
+
+/* ================= OPERA HERO ================= */
+
+/* Cornice proporzionata */
+main.hero .hero-card{
+  display: block;
+  text-decoration: none;
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius);
+  padding: clamp(12px, 2vw, 20px);
+  background: rgba(255,255,255,.015);
+  box-shadow: var(--shadow);
+  overflow: visible;
+}
+
+/* IMMAGINE: MAI TAGLIATA */
+main.hero .hero-card img{
+  display: block;
+  width: 100%;
+  height: auto !important;
+  max-height: min(78svh, 760px);
+  object-fit: contain !important;
+  border-radius: calc(var(--radius) - 8px);
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 900px){
+  main.hero{
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding: clamp(18px, 5vw, 32px);
+  }
+
+  main.hero .hero-card img{
+    max-height: min(62svh, 520px);
+  }
+
+  main.hero .lead,
+  main.hero .statement.small{
+    max-width: 100%;
+  }
+}
+
+/* ================= MICRO ANIMAZIONE ================= */
+
+@media (prefers-reduced-motion: no-preference){
+  main.hero{
+    animation: fadeUp .6s ease both;
+  }
+
+  @keyframes fadeUp{
+    from{
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to{
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
