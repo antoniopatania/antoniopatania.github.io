@@ -555,3 +555,36 @@ main.wrap p{
 main.wrap .quote{
   color: rgba(245,242,235,.78) !important;
 }
+/* =========================================================
+   HOME — affinamento finale (override sicuro)
+   ========================================================= */
+
+/* NOME ARTISTA — più presente */
+header.top a.brand{
+  font-size: clamp(32px, 4vw, 46px) !important;
+  letter-spacing: 0.22em !important;
+  font-weight: 300 !important;
+}
+
+/* CITAZIONE — più vicina all’opera */
+main.hero .lead{
+  margin-bottom: 18px !important;
+}
+
+main.hero .lead em{
+  font-size: clamp(19px, 2vw, 23px) !important;
+  line-height: 1.7 !important;
+  color: rgba(245,242,235,.82) !important;
+}
+
+/* BOX TESTO — leggermente più leggibile */
+main.hero .statement{
+  font-size: 14px !important;
+  line-height: 1.75 !important;
+}
+
+/* SPAZI VERTICALI — meno vuoto sopra e sotto */
+main.hero{
+  padding-top: 28px !important;
+  padding-bottom: 42px !important;
+}
