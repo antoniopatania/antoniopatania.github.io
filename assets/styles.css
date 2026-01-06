@@ -295,3 +295,4 @@ main.hero .hero-card img{
     }
   }
 }
+body { outline: 8px solid red !important; }
