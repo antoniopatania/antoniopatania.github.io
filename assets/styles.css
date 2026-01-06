@@ -511,6 +511,4 @@ main.hero .lead{
 main.hero .hero-card{
   max-width: min(640px, 92vw);
 }
-header { outline: 3px solid lime !important; }
-a { outline: 2px solid magenta !important; }
-main { outline: 2px solid cyan !important; }
+
