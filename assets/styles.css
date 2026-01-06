@@ -357,3 +357,58 @@ main{
     padding: clamp(16px, 5vw, 28px);
   }
 }
+/* =========================================================
+   BIO / PAGINE TESTUALI — FIX LEGGIBILITÀ
+   (non tocca la home hero)
+   ========================================================= */
+
+/* Contenitore bio */
+main.wrap{
+  width: min(900px, 100%);
+  margin: 0 auto;
+  padding: clamp(22px, 4vw, 56px);
+  color: rgba(245,242,235,.92);
+}
+
+/* Titolo Bio */
+main.wrap h1,
+main.wrap .h1{
+  font-family: ui-serif, "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-size: clamp(26px, 3vw, 36px);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  margin-bottom: 22px;
+  color: rgba(245,242,235,.95);
+}
+
+/* Citazione iniziale */
+main.wrap .quote{
+  font-style: italic;
+  font-size: clamp(16px, 1.5vw, 18px);
+  line-height: 1.7;
+  color: rgba(245,242,235,.78);
+  margin-bottom: 26px;
+  max-width: 70ch;
+}
+
+/* Paragrafi bio */
+main.wrap p,
+main.wrap .lead{
+  font-size: clamp(15px, 1.35vw, 17px);
+  line-height: 1.75;
+  color: rgba(245,242,235,.88);
+  margin-bottom: 18px;
+  max-width: 72ch;
+}
+
+/* Link in bio */
+main.wrap a{
+  color: rgba(245,242,235,.92);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+main.wrap a:hover{
+  color: rgba(245,242,235,1);
+}
